@@ -5,28 +5,23 @@ using System.Web;
 using System.Web.Mvc;
 using WebApplication3.Models;
 
-
-// install-package Entityframework
-
-
 namespace WebApplication3.Controllers
 {
     public class StudentController : Controller
     {
+        private MyDBEntities db = new MyDBEntities();
+
         // GET: Student
-        public ActionResult Index()
+        public ActionResult Index(string fnameFilter)
         {
-            MyDBEntities db = new MyDBEntities();
+            var students = string.IsNullOrEmpty(fnameFilter)
+                ? db.Students.ToList()
+                : db.Students.Where(s => s.fname.Contains(fnameFilter)).ToList();
 
-            /* * Student std = new Student();
-            std.fname = "ok";
-            std.lname = "okkkkk";
-            db.Students.Add(std);
-            db.SaveChanges(); * */
-
-            List<Student> stds = db.Students.ToList();
-            return View(stds);
+            ViewBag.FnameFilter = fnameFilter;
+            return View(students);
         }
+
         public ActionResult Registration()
         {
             return View();
@@ -35,18 +30,60 @@ namespace WebApplication3.Controllers
         [HttpPost]
         public ActionResult Registration(Student s)
         {
-            MyDBEntities db = new MyDBEntities();
             db.Students.Add(s);
             db.SaveChanges();
-            return View();
+            return RedirectToAction("Index");
         }
+
         public ActionResult Delete(int Id)
         {
-            MyDBEntities db = new MyDBEntities();
             Student std = db.Students.Find(Id);
-            db.Students.Remove(std);
-            db.SaveChanges();
+            if (std != null)
+            {
+                db.Students.Remove(std);
+                db.SaveChanges();
+            }
             return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public ActionResult DeleteSelected(int[] selectedIds)
+        {
+            if (selectedIds != null && selectedIds.Length > 0)
+            {
+                foreach (var id in selectedIds)
+                {
+                    Student student = db.Students.Find(id);
+                    if (student != null)
+                    {
+                        db.Students.Remove(student);
+                    }
+                }
+                db.SaveChanges();
+            }
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult Edit(int Id)
+        {
+            Student std = db.Students.Find(Id);
+            if (std == null)
+            {
+                return HttpNotFound();
+            }
+            return View(std);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Student s)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Entry(s).State = System.Data.Entity.EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(s);
         }
     }
 }
