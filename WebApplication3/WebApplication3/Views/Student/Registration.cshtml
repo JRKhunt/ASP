@@ -6,32 +6,119 @@
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .card {
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 12px 12px 0 0;
+        padding: 20px;
+    }
+
+    .card-body {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .form-control {
+        border-radius: 8px;
+        border: 1px solid #ced4da;
+        background-color: #f9f9f9;
+        transition: border-color 0.3s ease;
+    }
+
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: none;
+        }
+
+    .form-label {
+        font-weight: 500;
+        color: #495057;
+    }
+
+    .btn-submit,
+    .btn-success {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 20px;
+        font-size: 16px;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .btn-submit:hover,
+        .btn-success:hover {
+            background-color: #0056b3;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+    .btn-cancel {
+        background-color: #6c757d;
+        border-color: #6c757d;
+        color: white;
+        margin-left: 10px;
+        border-radius: 25px;
+        padding: 10px 20px;
+        font-size: 16px;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .btn-cancel:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+</style>
+
 <div class="container mt-5">
     <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card border-0 shadow-lg">
-                <div class="card-header text-center" style="background-color: #ff6f61; color: white;">
+        <div class="col-md-8 col-lg-6">
+            <div class="card">
+                <div class="card-header text-center">
                     <h2>@ViewBag.Title</h2>
                 </div>
-                <div class="card-body" style="background-color: #f7f7f7;">
+                <div class="card-body">
                     @using (Html.BeginForm("Registration", "Student", FormMethod.Post, new { @class = "form-horizontal" }))
                     {
-                        <div class="mb-4 row">
-                            @Html.LabelFor(m => m.fname, new { @class = "col-sm-3 col-form-label text-primary" })
-                            <div class="col-sm-9">
-                                @Html.TextBoxFor(m => m.fname, new { @class = "form-control border-primary", placeholder = "Enter First Name", style = "background-color: #eaf4fc;" })
-                            </div>
+                        <!-- First Name Field -->
+                        <div class="mb-4">
+                            @Html.LabelFor(m => m.fname, new { @class = "form-label" })
+                            @Html.TextBoxFor(m => m.fname, new { @class = "form-control", placeholder = "Enter First Name" })
                         </div>
                         <br />
-                        <div class="mb-4 row">
-                            @Html.LabelFor(m => m.lname, new { @class = "col-sm-3 col-form-label text-primary" })
-                            <div class="col-sm-9">
-                                @Html.TextBoxFor(m => m.lname, new { @class = "form-control border-primary", placeholder = "Enter Last Name", style = "background-color: #eaf4fc;" })
-                            </div>
+                        <!-- Last Name Field -->
+                        <div class="mb-4">
+                            @Html.LabelFor(m => m.lname, new { @class = "form-label" })
+                            @Html.TextBoxFor(m => m.lname, new { @class = "form-control", placeholder = "Enter Last Name" })
                         </div>
                         <br />
+                        <!-- City Field -->
+                        <div class="mb-4">
+                            @Html.LabelFor(m => m.city, new { @class = "form-label" })
+                            @Html.TextBoxFor(m => m.city, new { @class = "form-control", placeholder = "Enter City" })
+                        </div>
+                        <br />
+                        <!-- Submit and Cancel Buttons (for Edit page only) -->
                         <div class="text-center">
-                            <input type="submit" value="Submit" name="submit" class="btn" style="background-color: #ff6f61; color: white; width: 50%;" />
+                            <input type="submit" value="Submit" name="submit" class="btn btn-submit" />
+                            @if (ViewBag.Title == "Edit Student")
+                            {
+                                <a href="@Url.Action("Index", "Student")" class="btn btn-cancel">Cancel</a>
+                            }
                         </div>
                     }
                 </div>

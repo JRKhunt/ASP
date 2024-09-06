@@ -17,5 +17,6 @@ namespace WebApplication3.Models
         public int Id { get; set; }
         public string fname { get; set; }
         public string lname { get; set; }
+        public string city { get; set; }
     }
 }
