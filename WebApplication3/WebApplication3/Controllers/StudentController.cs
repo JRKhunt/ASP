@@ -12,24 +12,25 @@ namespace WebApplication3.Controllers
         private MyDBEntities db = new MyDBEntities();
 
         // GET: Student
-        public ActionResult Index(string nameFilter, string cityFilter)
+        public ActionResult Index(string filterType, string filterValue)
         {
             var students = from s in db.Students
                            select s;
 
-            if (!String.IsNullOrEmpty(nameFilter))
+            if (!String.IsNullOrEmpty(filterValue))
             {
-                students = students.Where(s => s.fname.Contains(nameFilter) || s.lname.Contains(nameFilter));
-            }
-
-            if (!String.IsNullOrEmpty(cityFilter))
-            {
-                students = students.Where(s => s.city.Contains(cityFilter));
+                if (filterType == "name")
+                {
+                    students = students.Where(s => s.fname.Contains(filterValue) || s.lname.Contains(filterValue));
+                }
+                else if (filterType == "city")
+                {
+                    students = students.Where(s => s.city.Contains(filterValue));
+                }
             }
 
             return View(students.ToList());
         }
-
 
         public ActionResult Registration()
         {
@@ -75,8 +76,7 @@ namespace WebApplication3.Controllers
             }
             return RedirectToAction("Index");
         }
-
-        public ActionResult Edit(int Id)
+        public ActionResult Edit(int? Id)
         {
             Student std = db.Students.Find(Id);
             if (std == null)

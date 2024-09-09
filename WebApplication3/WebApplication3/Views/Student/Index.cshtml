@@ -92,9 +92,22 @@
     @using (Html.BeginForm("Index", "Student", FormMethod.Get, new { @class = "form-horizontal" }))
     {
         <div class="mb-4 row">
-            <label for="nameFilter" class="col-sm-3 col-form-label">Filter by Name (First or Last):</label>
+            <label for="nameFilter" class="col-sm-3 col-form-label">Filter by:</label>
             <div class="col-sm-9">
-                <input type="text" id="nameFilter" name="nameFilter" class="form-control form-control-custom" placeholder="Enter Name" value="@Request.QueryString["nameFilter"]" />
+                <div class="form-check">
+                    <input type="radio" id="filterByName" name="filterType" value="name" class="form-check-input" checked />
+                    <label for="filterByName" class="form-check-label">Name (First or Last)</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="filterByCity" name="filterType" value="city" class="form-check-input" />
+                    <label for="filterByCity" class="form-check-label">City</label>
+                </div>
+            </div>
+        </div>
+        <div class="mb-4 row">
+            <label for="filterValue" class="col-sm-3 col-form-label">Enter Value:</label>
+            <div class="col-sm-9">
+                <input type="text" id="filterValue" name="filterValue" class="form-control form-control-custom" placeholder="Enter Value" value="@Request.QueryString["filterValue"]" />
             </div>
         </div>
         <div class="text-center mb-4">
