@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Student_data";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+<h2>Student_data</h2>
+<div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>FNAME</th>
+                <th>LNAME</th>
+                <th>CITY</th>
+                <th>AGE</th>
+                <th>FNAME LENGTH</th>
+                <th>REVERSE NAME</th>
+                <th>SELECTED OR NOT</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                var color = item.id % 2 == 0 ? "red" : "green";
+                var b = item.age > 17 ? "selected" : "not selected";
+                <tr style="color:@color">
+                    <td>@item.id</td>
+                    <td>@item.fname</td>
+                    <td>@item.lname</td>
+                    <td>@item.city</td>
+                    <td>@item.age</td>
+                    <td>@item.fname.Length</td>
+                    <td>@ReverseName(item.fname)</td>
+                    <td>@b</td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+</div>
+@functions {string ReverseName(string name)
+    {
+        char[] charArray = name.ToCharArray();
+        Array.Reverse(charArray);
+        return new string(charArray);
+    }
+}

@@ -1,0 +1,152 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ASP\\WebApplication2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E26938E-EB10-4471-861C-7D7428739213}|WebApplication2\\WebApplication2.csproj|C:\\ASP\\WebApplication2\\webapplication2\\views\\shared\\mylayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E26938E-EB10-4471-861C-7D7428739213}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\shared\\mylayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E26938E-EB10-4471-861C-7D7428739213}|WebApplication2\\WebApplication2.csproj|C:\\ASP\\WebApplication2\\webapplication2\\views\\my\\student_data.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E26938E-EB10-4471-861C-7D7428739213}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\my\\student_data.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E26938E-EB10-4471-861C-7D7428739213}|WebApplication2\\WebApplication2.csproj|C:\\ASP\\WebApplication2\\webapplication2\\views\\my\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E26938E-EB10-4471-861C-7D7428739213}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\my\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E26938E-EB10-4471-861C-7D7428739213}|WebApplication2\\WebApplication2.csproj|c:\\asp\\webapplication2\\webapplication2\\controllers\\mycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E26938E-EB10-4471-861C-7D7428739213}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\mycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E26938E-EB10-4471-861C-7D7428739213}|WebApplication2\\WebApplication2.csproj|C:\\ASP\\WebApplication2\\webapplication2\\models\\my.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E26938E-EB10-4471-861C-7D7428739213}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\my.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E26938E-EB10-4471-861C-7D7428739213}|WebApplication2\\WebApplication2.csproj|C:\\ASP\\WebApplication2\\webapplication2\\views\\my\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E26938E-EB10-4471-861C-7D7428739213}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\my\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E26938E-EB10-4471-861C-7D7428739213}|WebApplication2\\WebApplication2.csproj|C:\\ASP\\WebApplication2\\webapplication2\\views\\my\\pricing.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E26938E-EB10-4471-861C-7D7428739213}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\my\\pricing.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E26938E-EB10-4471-861C-7D7428739213}|WebApplication2\\WebApplication2.csproj|C:\\ASP\\WebApplication2\\webapplication2\\views\\my\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E26938E-EB10-4471-861C-7D7428739213}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\views\\my\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "My.cs",
+              "DocumentMoniker": "C:\\ASP\\WebApplication2\\WebApplication2\\Models\\My.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\My.cs",
+              "ToolTip": "C:\\ASP\\WebApplication2\\WebApplication2\\Models\\My.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\My.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwA0AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T02:20:37.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Pricing.cshtml",
+              "DocumentMoniker": "C:\\ASP\\WebApplication2\\WebApplication2\\Views\\My\\Pricing.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\My\\Pricing.cshtml",
+              "ToolTip": "C:\\ASP\\WebApplication2\\WebApplication2\\Views\\My\\Pricing.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\My\\Pricing.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-27T05:47:51.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\ASP\\WebApplication2\\WebApplication2\\Views\\My\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\My\\Index.cshtml",
+              "ToolTip": "C:\\ASP\\WebApplication2\\WebApplication2\\Views\\My\\Index.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\My\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-27T05:03:16.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\ASP\\WebApplication2\\WebApplication2\\Views\\My\\About.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\My\\About.cshtml",
+              "ToolTip": "C:\\ASP\\WebApplication2\\WebApplication2\\Views\\My\\About.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\My\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-27T05:02:49.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\ASP\\WebApplication2\\WebApplication2\\Views\\My\\Contact.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\My\\Contact.cshtml",
+              "ToolTip": "C:\\ASP\\WebApplication2\\WebApplication2\\Views\\My\\Contact.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\My\\Contact.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-27T05:02:31.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MyController.cs",
+              "DocumentMoniker": "C:\\ASP\\WebApplication2\\WebApplication2\\Controllers\\MyController.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\MyController.cs",
+              "ToolTip": "C:\\ASP\\WebApplication2\\WebApplication2\\Controllers\\MyController.cs",
+              "RelativeToolTip": "WebApplication2\\Controllers\\MyController.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAFQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T05:01:27.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Student_data.cshtml",
+              "DocumentMoniker": "C:\\ASP\\WebApplication2\\WebApplication2\\Views\\My\\Student_data.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\My\\Student_data.cshtml",
+              "ToolTip": "C:\\ASP\\WebApplication2\\WebApplication2\\Views\\My\\Student_data.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\My\\Student_data.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-29T02:23:37.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyLayout.cshtml",
+              "DocumentMoniker": "C:\\ASP\\WebApplication2\\WebApplication2\\Views\\Shared\\MyLayout.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Shared\\MyLayout.cshtml",
+              "ToolTip": "C:\\ASP\\WebApplication2\\WebApplication2\\Views\\Shared\\MyLayout.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Shared\\MyLayout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAH4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-27T05:00:10.986Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
