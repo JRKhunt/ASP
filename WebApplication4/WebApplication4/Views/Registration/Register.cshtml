@@ -7,40 +7,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for the registration page */
+        body {
+            background-color: #f0f2f5;
+        }
+
+        .registration-container {
+            max-width: 450px;
+            margin: 0 auto;
+            margin-top: 100px;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .registration-title {
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        .form-label {
+            color: #495057;
+            font-weight: 500;
+        }
+
+        .text-danger {
+            font-size: 0.9em;
+        }
+
+        .alert {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <div class="container mt-5">
-        <h2 class="text-center">REGISTRATION</h2>
+    <div class="container">
+        <div class="registration-container">
+            <h2 class="registration-title">Registration</h2>
 
-        @using (Html.BeginForm("Register", "Registration", FormMethod.Post))
-        {
-            <div class="mb-3">
-                @Html.LabelFor(model => model.Username, new { @class = "form-label" })
-                @Html.TextBoxFor(model => model.Username, new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
-            </div>
+            @using (Html.BeginForm("Register", "Registration", FormMethod.Post))
+            {
+                <div class="mb-3">
+                    @Html.LabelFor(model => model.Username, new { @class = "form-label" })
+                    @Html.TextBoxFor(model => model.Username, new { @class = "form-control", placeholder = "Enter your username" })
+                    @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                </div>
 
-            <div class="mb-3">
-                @Html.LabelFor(model => model.Email, new { @class = "form-label" })
-                @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @type = "email" })
-                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
-            </div>
+                <div class="mb-3">
+                    @Html.LabelFor(model => model.Email, new { @class = "form-label" })
+                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @type = "email", placeholder = "Enter your email" })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </div>
 
-            <div class="mb-3">
-                @Html.LabelFor(model => model.Password, new { @class = "form-label" })
-                @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
-            </div>
+                <div class="mb-3">
+                    @Html.LabelFor(model => model.Password, new { @class = "form-label" })
+                    @Html.PasswordFor(model => model.Password, new { @class = "form-control", placeholder = "Enter your password" })
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                </div>
 
-            <button type="submit" class="btn btn-primary w-100">Register</button>
-        }
+                <button type="submit" class="btn btn-primary w-100">Register</button>
+            }
 
-        @if (TempData["EmailExists"] != null)
-        {
-            <script>
-                alert('@TempData["EmailExists"]');
-            </script>
-        }
+            @if (TempData["EmailExists"] != null)
+            {
+                <script>
+                    alert('@TempData["EmailExists"]');
+                </script>
+            }
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

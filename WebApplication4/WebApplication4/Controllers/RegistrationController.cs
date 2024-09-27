@@ -24,6 +24,22 @@ namespace WebApplication4.Controllers
         {
             return View();
         }
+        [HttpPost]
+public ActionResult Index(Registration r)
+{
+    // Check if a user exists with the provided email and password
+    Registration s = _context.Registrations.FirstOrDefault(u => u.Email == r.Email && u.Password == r.Password);
+    
+    if (s != null) // User found
+    {
+        // Redirect to the Welcome action if the login is successful
+        return RedirectToAction("Welcome", new { username = s.Username });
+    }
+
+    // If login fails, show an error message
+    ModelState.AddModelError("", "This user does not exist.password is incorrect.");
+    return View(r); // Return the view with the input data to display errors
+}
         public ActionResult Register()
         {
             return View();
@@ -60,6 +76,16 @@ namespace WebApplication4.Controllers
             // If the model is not valid, return the same view with validation messages
             return View(model);
         }
+        public ActionResult Welcome(string username)
+        {
+            ViewBag.Username = username;
+            return View();
+        }
+        //public ActionResult Show()
+        //{
+        //    List<Registration> show = _context.Registrations.ToList();
+        //    return View(show);
+        //}
     }
 }
 

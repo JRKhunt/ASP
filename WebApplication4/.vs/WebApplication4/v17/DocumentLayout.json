@@ -1,28 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\ASP\\ABC\\ASP\\WebApplication4\\",
+  "WorkspaceRootPath": "C:\\ASP\\WebApplication4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D86091FA-3040-4535-8C1D-B0EE239D66CC}|WebApplication4\\WebApplication4.csproj|c:\\asp\\abc\\asp\\webapplication4\\webapplication4\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D86091FA-3040-4535-8C1D-B0EE239D66CC}|WebApplication4\\WebApplication4.csproj|c:\\asp\\webapplication4\\webapplication4\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D86091FA-3040-4535-8C1D-B0EE239D66CC}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D86091FA-3040-4535-8C1D-B0EE239D66CC}|WebApplication4\\WebApplication4.csproj|C:\\ASP\\WebApplication4\\webapplication4\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D86091FA-3040-4535-8C1D-B0EE239D66CC}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D86091FA-3040-4535-8C1D-B0EE239D66CC}|WebApplication4\\WebApplication4.csproj|c:\\asp\\abc\\asp\\webapplication4\\webapplication4\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D86091FA-3040-4535-8C1D-B0EE239D66CC}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D86091FA-3040-4535-8C1D-B0EE239D66CC}|WebApplication4\\WebApplication4.csproj|C:\\ASP\\ABC\\ASP\\WebApplication4\\webapplication4\\views\\registration\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D86091FA-3040-4535-8C1D-B0EE239D66CC}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\registration\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D86091FA-3040-4535-8C1D-B0EE239D66CC}|WebApplication4\\WebApplication4.csproj|c:\\asp\\abc\\asp\\webapplication4\\webapplication4\\views\\registration\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D86091FA-3040-4535-8C1D-B0EE239D66CC}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\registration\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__ASP_ABC_ASP_WEBAPPLICATION4_WEBAPPLICATION4_APP_DATA_REGISTRATION.MDF/True/SqlTable/dbo.Registration.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D86091FA-3040-4535-8C1D-B0EE239D66CC}|WebApplication4\\WebApplication4.csproj|C:\\ASP\\ABC\\ASP\\WebApplication4\\webapplication4\\models\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D86091FA-3040-4535-8C1D-B0EE239D66CC}|WebApplication4\\WebApplication4.csproj|C:\\ASP\\WebApplication4\\webapplication4\\models\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D86091FA-3040-4535-8C1D-B0EE239D66CC}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\models\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -33,77 +22,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RouteConfig.cs",
-              "DocumentMoniker": "C:\\ASP\\ABC\\ASP\\WebApplication4\\WebApplication4\\App_Start\\RouteConfig.cs",
-              "RelativeDocumentMoniker": "WebApplication4\\App_Start\\RouteConfig.cs",
-              "ToolTip": "C:\\ASP\\ABC\\ASP\\WebApplication4\\WebApplication4\\App_Start\\RouteConfig.cs",
-              "RelativeToolTip": "WebApplication4\\App_Start\\RouteConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T03:37:47.011Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "dbo.Registration [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__ASP_ABC_ASP_WEBAPPLICATION4_WEBAPPLICATION4_APP_DATA_REGISTRATION.MDF/True/SqlTable/dbo.Registration.sql",
-              "ToolTip": "dbo.Registration [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-09-23T03:33:46.765Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\ASP\\ABC\\ASP\\WebApplication4\\WebApplication4\\Views\\Registration\\Register.cshtml",
-              "RelativeDocumentMoniker": "WebApplication4\\Views\\Registration\\Register.cshtml",
-              "ToolTip": "C:\\ASP\\ABC\\ASP\\WebApplication4\\WebApplication4\\Views\\Registration\\Register.cshtml",
-              "RelativeToolTip": "WebApplication4\\Views\\Registration\\Register.cshtml",
-              "ViewState": "AQIAABoAAAAAAAAAAAAgwCQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-23T03:06:47.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\ASP\\ABC\\ASP\\WebApplication4\\WebApplication4\\Views\\Registration\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebApplication4\\Views\\Registration\\Index.cshtml",
-              "ToolTip": "C:\\ASP\\ABC\\ASP\\WebApplication4\\WebApplication4\\Views\\Registration\\Index.cshtml",
-              "RelativeToolTip": "WebApplication4\\Views\\Registration\\Index.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABAAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-14T05:51:56.318Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\ASP\\WebApplication4\\WebApplication4\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApplication4\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\ASP\\WebApplication4\\WebApplication4\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApplication4\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T03:37:51.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "RegistrationController.cs",
-              "DocumentMoniker": "C:\\ASP\\ABC\\ASP\\WebApplication4\\WebApplication4\\Controllers\\RegistrationController.cs",
+              "DocumentMoniker": "C:\\ASP\\WebApplication4\\WebApplication4\\Controllers\\RegistrationController.cs",
               "RelativeDocumentMoniker": "WebApplication4\\Controllers\\RegistrationController.cs",
-              "ToolTip": "C:\\ASP\\ABC\\ASP\\WebApplication4\\WebApplication4\\Controllers\\RegistrationController.cs",
+              "ToolTip": "C:\\ASP\\WebApplication4\\WebApplication4\\Controllers\\RegistrationController.cs",
               "RelativeToolTip": "WebApplication4\\Controllers\\RegistrationController.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAwwDQAAAAyAAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAowFcAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-14T05:51:36.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Registration.cs",
-              "DocumentMoniker": "C:\\ASP\\ABC\\ASP\\WebApplication4\\WebApplication4\\Models\\Registration.cs",
+              "DocumentMoniker": "C:\\ASP\\WebApplication4\\WebApplication4\\Models\\Registration.cs",
               "RelativeDocumentMoniker": "WebApplication4\\Models\\Registration.cs",
-              "ToolTip": "C:\\ASP\\ABC\\ASP\\WebApplication4\\WebApplication4\\Models\\Registration.cs",
+              "ToolTip": "C:\\ASP\\WebApplication4\\WebApplication4\\Models\\Registration.cs",
               "RelativeToolTip": "WebApplication4\\Models\\Registration.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAwwBYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

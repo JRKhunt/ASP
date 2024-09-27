@@ -154,6 +154,8 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Registration\Index.cshtml" />
     <Content Include="Views\Registration\Register.cshtml" />
+    <Content Include="Views\Registration\Welcome.cshtml" />
+    <Content Include="Views\Registration\Show.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
