@@ -1,0 +1,123 @@
+﻿@model WebApplication5.Models.Image
+@{
+    ViewBag.Title = "Upload Image";
+}
+
+<!-- Container for the form -->
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <!-- Card for the image upload form -->
+            <div class="card shadow-lg border-0 rounded-lg">
+                <div class="card-header bg-primary text-white text-center">
+                    <h2 class="mb-0">Upload an Image</h2>
+                </div>
+                <div class="card-body p-4">
+                    <!-- Form for uploading image -->
+                    @using (Html.BeginForm("Upload", "Image", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                    {
+                        <div class="form-group">
+                            <label for="file" class="font-weight-bold">Select an image to upload:</label>
+                            <input type="file" name="file" class="form-control" />
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block mt-3">
+                            <i class="fas fa-upload"></i> Upload
+                        </button>
+                    }
+                </div>
+            </div>
+
+            <!-- Display message after image upload -->
+            @if (ViewBag.Message != null)
+            {
+                <div class="alert alert-info text-center mt-4">@ViewBag.Message</div>
+            }
+
+            <!-- Uploaded image details and preview -->
+            @if (ViewBag.Image != null)
+            {
+                <div class="card mt-4 shadow-sm border-0">
+                    <div class="card-header bg-success text-white text-center">
+                        <h3>Uploaded Image Details</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Image Name:</strong> @ViewBag.Image.Img_Name_</p>
+                        <p><strong>Image Path (URL):</strong> @ViewBag.Image.Img_Path</p>
+
+                        <h4 class="text-center mt-4">Uploaded Image Preview:</h4>
+                        <div class="text-center">
+                            <img src="@ViewBag.Image.Img_Path" alt="Uploaded Image" class="img-thumbnail" style="max-width: 400px;" />
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<!-- Add Bootstrap and FontAwesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Custom Styles -->
+<style>
+    /* Body background color and font */
+    body {
+        background-color: #f0f2f5;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Center container and add padding */
+    .container {
+        max-width: 1000px;
+        padding: 20px;
+    }
+
+    /* Card header customization */
+    .card-header {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        padding: 15px;
+    }
+
+    /* Styling the form labels and input */
+    .form-group label {
+        font-size: 1.2rem;
+        color: #333;
+    }
+
+    .form-control {
+        font-size: 1rem;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    /* Styling the upload button */
+    .btn-block {
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    /* Alert box customization */
+    .alert-info {
+        font-size: 1.1rem;
+        border-radius: 5px;
+    }
+
+    /* Styling for the uploaded image preview */
+    img.img-thumbnail {
+        border-radius: 10px;
+        transition: transform 0.2s ease-in-out;
+    }
+
+        img.img-thumbnail:hover {
+            transform: scale(1.05);
+        }
+
+    /* Box shadow effect for cards */
+    .card {
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+</style>
